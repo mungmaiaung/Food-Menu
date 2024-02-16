@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chnai Market</title>
+   <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>CHNAI MARKET CAFE</h1>
+    </header>
+
+    <div class="gallery">
+        <div class="item">
+            <img src="./photo/Cashew nuts Smothie.jpg" alt=" a cup of smottie">  
+            <div class="overlay_1">Cashew nuts Smothie</div>
+        </div>
+        <div class="item">
+            <img src="./photo/Japanese Tes with Shiratama Dango.jpg" alt=" a cup of smottie">
+            <div class="overlay_1">Japanese Tes with Shiratama Dango</div>
+        </div>
+        <div class="item">
+            <img src="./photo/Norimaki.jpg" alt=" a cup of smottie">
+            <div class="overlay_1">Norimaki</div>
+        </div>
+        <div class="item">
+            <img src="./photo/walnuts pizza.webp" alt=" a cup of smottie">
+            <div class="overlay_1">Walnuts Pizza</div>
+        </div>
+        <div class="item">
+            <img src="./photo/Warm rice with Furikake.jpg" alt=" a cup of smottie">
+            <div class="overlay_1">Warm rice with Furikake</div>
+        </div>
+    </div>
+
+    <section>
+        <h2>Our Avaiable Menu</h2>
+        <div class="menu_table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Menu Items</th>
+                        <th>Specific</th>
+                        <th>Price</th>
+                        <th>Select</th>
+                    </tr>
+                </thead>
+                <tbody id="menuItems">
+                    <!-- Insert your daily menu items and prices here -->
+                    <tr>
+                        <td>Cashew nuts Smothie</td>
+                        <td>small cup</td>
+                        <td>1 USD</td>
+                        <td><input type="checkbox" name="menuItem" data-price="1"></td>
+                    </tr><tr>
+                        <td>Cashew nuts Smothie</td>
+                        <td>Big cup</td>
+                        <td>2.5 USD</td>
+                        <td><input type="checkbox" name="menuItem" data-price="2.5"></td>
+                    </tr>
+                    <tr>
+                        <td>Japanese Tes with Shiratama Dango</td>
+                        <td>1 plate</td>
+                        <td>2 USD</td>
+                        <td><input type="checkbox" name="menuItem" data-price="2"></td>
+                    </tr>
+                    <tr>
+                        <td>Norimaki</td>
+                        <td>1 plate</td>
+                        <td>2 USD</td>
+                        <td><input type="checkbox" name="menuItem" data-price="2"></td>
+                    </tr>
+                    <tr>
+                        <td>Walnuts Pizza</td>
+                        <td>small one </td>
+                        <td>2 USD</td>
+                        <td><input type="checkbox" name="menuItem" data-price="2"></td>
+                    </tr>
+                    <tr>    
+                        <td>Warm rice with Furikake</td>
+                        <td>1 plate</td>
+                        <td>1 USD</td>
+                        <td><input type="checkbox" name="menuItem" data-price="1"></td>
+                    </tr>
+                  
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>  
+        <div class="order">
+            <h3>Total Price: <span id="totalPrice">0</span>USD</h3>
+            <button onclick="openPopup()">Order & Pay</button>
+        </div>
+            <!-- Popup overlay and content -->
+                <div class="ovl" id="ovl">
+                <div class="popup" style="width: 60%; height: fit-content;">
+                    <h2 style="display: inline; padding-right: 1em;">Always consider the impact!</h2>
+                    <div class="close-btn" onclick="closePopup()">X</div>
+                    <hr>
+                    <img class="QRcode" src="./foodmenu/bgimage.jpg" alt="">
+                    <p>Order details:</p>
+                    <p>Total Price: <span id="popupTotalPrice">0</span> USD</p>
+                    <p>Thank you for coming to our Success Academy Cafe and if you have any question or recommendation you can directly fill our google survey form or if you are one of the google map user you can click the google map link to leave us a message in your journey. Please, enjoy!</p>
+                    <ul style="padding-right:6px;">
+                        <li style="display:inline;"><a href="https://www.facebook.com/one4oneclothing4all" target="_blank">Facebook</a></li>
+                        <li style="display:inline;"><a href="https://www.instagram.com/one4one_clothing4all?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                        <li style="display:inline;"><a href="https://one4onemm.mystrikingly.com/" target="_blank">Strikingly</a></li>
+                    </ul>
+                </div>
+                </div>
+    </section> 
+
+
+    <section class="open-hour">
+        <div class="open-hour-section">
+            <h2>Opening Hours</h2><br>
+            <p>Every days: 9:00 AM - 6:00 PM</p>
+            <p>Saturday(Special Event): Please visit our Facebook Page for more clarifications <a href="https://www.facebook.com/chnaimarket?mibextid=ZbWKwL">Chnai Market</a> <b>(Note: free event)</b></p>
+        </div>
+    </section> 
+
+    <section class="contact-info">
+        <div class="contact-info-section">
+            <h2>Contact Information</h2><br>
+            <p> Add: 128, st 110, Phsar Chas, Daun Penh, Phnom Penh Cambodia.</a></p>
+            <p>Phone: <a href="tel:+9969207775">0969207775</a></p>
+            <p>Mailing Address: <a href="mailto:jamesmlbb390@gmail.com">jamesmlbb390@gmail.com</a></p>
+            <a href="https://maps.app.goo.gl/LV6D9TNkSc2LU5X68" target="_blank">Google Map:</a>         
+        </div>
+    </section>
+
+    <section class="feedback">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSew0ECKLF12jJrXIn5qTNXC0ZaX5QudrJ5ZgWOnrw_x4Bnlyg/viewform?embedded=true" width="100%" height="300px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section> <hr>
+
+    <footer class="footer_sc">
+        &copy; 2024 Chnai Market. All rights reserved.
+    </footer>
+    
+    <script>
+        // JavaScript code to calculate total price and update display
+        const menuItems = document.querySelectorAll('#menuItems input[type="checkbox"]');
+        const totalPriceDisplay = document.getElementById('totalPrice');
+
+        // Add event listener to each checkbox
+        menuItems.forEach(item => {
+            item.addEventListener('change', calculateTotalPrice);
+        });
+
+        // Function to calculate total price
+        function calculateTotalPrice() {
+            let totalPrice = 0;
+            menuItems.forEach(item => {
+                if (item.checked) {
+                    // Extract price from the dataset
+                    const price = parseFloat(item.dataset.price.replace(',', ''));
+                    totalPrice += price;
+                }
+            });
+            // Update total price display
+            totalPriceDisplay.textContent = totalPrice.toLocaleString() + '';
+        }
+
+        // Popup for ordering & Payment
+
+        function openPopup() {
+                document.getElementById('ovl').style.display = 'flex';
+                // Get total price
+                const totalPrice = totalPriceDisplay.textContent;
+                // Update total price in the dialog
+                document.getElementById('popupTotalPrice').textContent = totalPrice;
+
+            }
+       
+            // Function to close the popup with animation
+        function closePopup() {
+            var ovl = document.getElementById('ovl');
+            var popup = document.querySelector('.popup'); // Corrected selector
+            var closeBtn = document.querySelector('.close-btn');
+
+            // Add class to trigger the fadeOutPopup animation
+            ovl.classList.add('fadeOutPopup');
+            popup.classList.add('slideOutPopup');
+
+            closeBtn.classList.add('rotateOutCloseBtn');
+
+            // Wait for the animation to complete before hiding the overlay
+            setTimeout(function() {
+                ovl.style.display = 'none';
+                // Remove the fadeOutPopup class to allow re-opening the popup
+                ovl.classList.remove('fadeOutPopup');
+                popup.classList.remove('slideOutPopup');
+                closeBtn.classList.remove('rotateOutCloseBtn');
+            }, 500); // 500ms is the duration of the fadeOutPopup animation
+            }
+
+
+       
+    </script>
+</body>
+</html>
