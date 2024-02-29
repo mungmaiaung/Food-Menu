@@ -121,7 +121,7 @@ header {
     padding-top: 10px;
     overflow-x: auto ;
     padding: 2em 2em;
-    background-color: rgb(10, 10, 10);
+    background-color: rgb(241, 118, 118);
 }
 
 .gallery::-webkit-scrollbar{
@@ -165,7 +165,7 @@ img:hover{
     bottom: 0;
     width: 100%;
     background-color: rgba(74, 72, 72, 0.5); /* Overlay background color */
-    color: rgb(255, 255, 255);
+    color: rgb(245, 235, 235);
     padding: 10px;
     transition: left 0.3s ease;
     text-align:justify;
@@ -194,7 +194,7 @@ table{
 }
 
 table:hover{
-    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background color */
+    background-color: rgba(184, 91, 91, 0.6); /* Semi-transparent background color */
 }
 
 
@@ -218,7 +218,7 @@ td{
 th{
     padding: 8px;
     background-color: #216e6e;
-    color: #ffffff; /* Set the text color for th elements */
+    color: #141414; /* Set the text color for th elements */
 }
 
 .order{
