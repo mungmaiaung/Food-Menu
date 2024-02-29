@@ -121,7 +121,7 @@ header {
     padding-top: 10px;
     overflow-x: auto ;
     padding: 2em 2em;
-    background-color: rgb(245, 229, 208);
+    background-color: rgb(10, 10, 10);
 }
 
 .gallery::-webkit-scrollbar{
@@ -206,8 +206,8 @@ table {
 }
 
 tbody tr:hover{
-    background-color: #0f5e749a;
-    color: #ddd;
+    background-color: #1111119a;
+    color: #d5e408;
 }
 
 td{
@@ -217,7 +217,7 @@ td{
 
 th{
     padding: 8px;
-    background-color: #02717d;
+    background-color: #216e6e;
     color: #ffffff; /* Set the text color for th elements */
 }
 
@@ -331,7 +331,7 @@ th{
 }
 
 .open-hour-section{
-    background-color: rgb(213, 209, 209, 0.459);
+    background-color: rgba(145, 88, 88, 0.459);
     padding: 1em 1em;
     border-radius: 10px;
 }
@@ -341,14 +341,14 @@ th{
 }
 
 .contact-info-section{
-    background-color: rgb(213, 209, 209, 0.459);
+    background-color: rgba(151, 96, 96, 0.459);
     padding: 1em 1em;
     border-radius: 10px;
     text-align: center;
 }
     
 .contact-info a{
-    color: #10419c;
+    color: #070bf5;
 }
 section {
     margin-top: 20px;
